@@ -1,0 +1,51 @@
+/* Knowledgebase Custom Styles: Views Login */
+.kwb-login {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 15px 16.83px 0.17px rgba(0, 0, 0, 0.05);
+    max-width: 900px;
+    padding: 50px;
+
+    @media (max-width: 500px) {
+        padding: 20px;
+    }
+}
+
+.kwb-login-form {
+    @media (max-width: 768px) {
+        padding-bottom: 40px;
+    }
+}
+
+.kwb-login-wrapper {
+    background-color: whitesmoke;
+    padding: 50px;
+}
+
+.kwb-login-button {
+    background-color: #af936c;
+    color: #ffffff;
+    &:hover {
+        background-color: #f1d7b3;
+        color: #ffffff;
+    }
+}
+
+.kwb-login-link {
+    background-color: #af936c;
+    color: #ffffff;
+    &:hover {
+        background-color: #f1d7b3;
+        color: #ffffff;
+    }
+}
+
+.kwb-login-link-outline {
+    background-color: transparent;
+    border: 1px solid #af936c;
+    color: #af936c;
+    &:hover {
+        background-color: #af936c;
+        color: #ffffff;
+    }
+}

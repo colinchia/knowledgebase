@@ -1,0 +1,32 @@
+/* Knowledgebase Custom Styles: Views Dashboard */
+.kwb-dashboard-gallerycard {
+    cursor: pointer;
+    transition: transform 0.3s;
+    &:hover {
+        transform: scale(1.03);
+    }
+}
+
+.kwb-dashboard-galleryimgwrapper {
+    height: 200px;
+    overflow: hidden;
+
+    img {
+        height: 100%;
+        object-fit: cover;
+        transition: opacity 0.3s;
+        width: 100%;
+        &:hover {
+            opacity: 0.7;
+        }
+    }
+}
+
+.kwb-dashboard-gallerycardbody {
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.kwb-dashboard-gallerycardtitle {
+    font-weight: 600;
+}

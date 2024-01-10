@@ -1,0 +1,338 @@
+/* Knowledgebase Custom Styles: Components Shared */
+.kwb-btn {
+    border-radius: 5px;
+    font-size: 13px;
+    min-height: 30px;
+}
+
+.kwb-btn-icon {
+    margin-right: 10px;
+}
+
+.kwb-btn-borderless {
+    background: transparent;
+    border: 0;
+    padding: 0;
+}
+
+.kwb-btn-search {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.kwb-hidden {
+    opacity: 0;
+    transition: opacity 0.5s, visibility 0.5s 0.5s;
+    visibility: hidden;
+}
+
+.kwb-img-rounded {
+    aspect-ratio: 1 / 1;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50% !important;
+    display: block;
+}
+
+.kwb-label-collapse {
+    margin-bottom: .5rem;
+    a {
+        font-size: 13px;
+        font-weight: 600;
+    }
+}
+
+.kwb-styled-chevron {
+    margin-left: 5px;
+    transition: transform 0.3s ease;
+    &.rotate {
+        transform: rotate(90deg);
+    }
+}
+
+.kwb-portrait {
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+
+/* Knowledgebase Custom Styles: Components Content, Header, Footer */
+.kwb-content {
+    padding: 0 20px 0 20px;
+    transition: margin-left 0.5s;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.kwb-header {
+    margin-bottom: 70px;
+    margin-top: 30px;
+}
+
+.kwb-footer {
+    font-size: 12px;
+}
+
+
+/* Knowledgebase Custom Styles: Components Assets */
+.kwb-asset-container {
+    border-radius: 5px;
+    padding: 20px;
+    min-height: 100px;
+    height: 200px;
+    overflow-y: auto;
+    resize: vertical;
+    ::-webkit-scrollbar {
+        width: 10px;
+    }
+    ::-webkit-scrollbar-track {
+        background: #f1f1f1;
+    }
+    ::-webkit-scrollbar-thumb {
+        background: #888;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+        background: #555;
+    }
+}
+
+.kwb-asset-tile {
+    cursor: pointer;
+}
+
+
+/* Knowledgebase Custom Styles: Components Dockets */
+.kwb-docket {
+    margin-bottom: 70px;
+}
+
+.kwb-docket-card {
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.kwb-docket-carddeletebtn {
+    top: 10px;
+    right: 10px;
+    i {
+        color: red;
+        font-size: 16px;
+        transition: color 0.2s;
+        &:hover {
+            color: white;
+        }
+    }
+}
+
+.kwb-docket-card-image {
+    object-fit: cover;
+    object-position: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+}
+
+.kwb-docket-card-imagecontainer {
+    position: relative;
+    padding-top: 100%;
+    overflow: hidden;
+
+    i {
+        position: absolute;
+        top: 25%;
+        @media (max-width: 576px) {
+            font-size: 150px;
+            top: 5%;
+        }
+        @media (min-width: 577px) and (max-width: 768px) {
+            font-size: 200px;
+            top: 25%;
+        }
+        @media (min-width: 769px) and (max-width: 992px) {
+            font-size: 40px;
+            top: 18%;
+        }
+        @media (min-width: 993px) and (max-width: 1200px) {
+            font-size: 45px;
+            top: 28%;
+        }
+        @media (min-width: 1201px) {
+            font-size: 70px;
+            top: 25%;
+        }
+    }
+}
+
+.kwb-docket-cardfooter {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.kwb-docket-colcenter {
+    padding: 10px;
+}
+
+.kwb-docket-controls {
+    margin-bottom: 15px;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.kwb-docket-iconpin {
+    color: red;
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+.kwb-docket-img {
+    width: 35px;
+}
+
+.kwb-docket-itemtally {
+    font-size: 12px;
+    margin-right: 10px;
+}
+
+.kwb-docket-text {
+    font-size: 14px;
+    margin-bottom: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 100%;
+}
+
+.kwb-docket-title {
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 100%;
+}
+
+
+/* Knowledgebase Custom Styles: Components Forms */
+.kwb-formgroup {
+    margin-bottom: 0;
+}
+
+.kwb-formgroup .card {
+    margin-bottom: 15px;
+}
+
+.kwb-formgroup .card-header {
+    background-color: darkgray;
+    color: white;
+}
+
+.kwb-formgroup .card-body {
+    background-color: whitesmoke;
+}
+
+.kwb-formgroup label {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.kwb-formgroup input,
+.kwb-formgroup textarea {
+    font-size: 14px;
+}
+
+.kwb-formgroup .kwb-formgroup-inputgroup {
+    margin-bottom: 15px;
+}
+
+.kwb-formgroup .kwb-formgroup-bodyconsecutive {
+    border-top: 1px solid #dee2e6;
+}
+
+.kwb-formgroup .kwb-formgroup-notes {
+    font-size: 14px;
+    margin-bottom: 0;
+}
+
+.kwb-formgroup .kwb-formgroup-fileupload {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.kwb-formgroup .kwb-formgroup-filelist li {
+    border-left: 1px solid #dee2e6;
+    border-right: 1px solid #dee2e6;
+    font-size: 14px;
+    padding: 7px 30px 7px 5px;
+    &:last-child {
+        border-radius: 0 0 5px 5px;
+        border-bottom-width: 1px;
+    }
+}
+
+.kwb-formgroup .kwb-formgroup-filelisticon {
+    color: gray;
+}
+
+.kwb-formgroup .kwb-formgroup-filelistdesc {
+    color: gray;
+    font-size: 12px;
+    padding-left: 5px;
+}
+
+
+/* Knowledgebase Custom Styles: Components Modals */
+.kwb-modal {
+    background-color: rgba(0, 0, 0, 0.5);
+    display: block;
+    font-size: 13px;
+}
+
+.kwb-modal h2 {
+    font-size: 15px;
+}
+
+.kwb-modal-pills {
+    margin-right: 5px;
+}
+
+
+/* Knowledgebase Custom Styles: Components Tooltip */
+.kwb-tooltip {
+    position: relative;
+    display: inline-block;
+}
+
+.kwb-tooltip-content {
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translate(-50%, -5px);
+    padding: 8px;
+    background-color: black;
+    color: white;
+    border-radius: 4px;
+    font-size: 12px;
+    white-space: nowrap;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+
+    /* Triangle pointer */
+    &:after {
+        content: "";
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        border-width: 5px;
+        border-style: solid;
+        border-color: black transparent transparent transparent;
+        transform: translateX(-50%);
+    }
+}

@@ -1,0 +1,39 @@
+/* Knowledgebase Custom Styles: Views Home */
+.kwb-homearticle-description {
+    margin-bottom: 70px;
+}
+
+.kwb-home-galleryalltopics {
+    border-radius: 5px;
+    margin-bottom: 70px;
+    padding: 12px;
+}
+
+.kwb-home-galleryalltopicscard {
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    height: 100%;
+    overflow: hidden;
+    padding: 10px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    transition: color 0.3s ease;
+}
+
+.kwb-home-galleryalltopicstitle {
+    font-weight: 800;
+}
+
+.kwb-home-galleryalltopicsrow {
+    &.collapsing {
+        min-height: 105px;
+        overflow-y: hidden;
+    }
+
+    &.collapse:not(.show) {
+        display: flex !important;
+        height: 107px;
+        overflow-y: hidden;
+    }
+}

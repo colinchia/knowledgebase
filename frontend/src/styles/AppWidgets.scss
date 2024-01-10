@@ -1,0 +1,116 @@
+/* Knowledgebase Custom Styles: Widgets Sidebar */
+.kwb-sidebar {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-between;
+    left: 0;
+    overflow-x: hidden;
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    transition: 0.5s;
+    width: 250px;
+    z-index: 10;
+    i {
+        margin-right: 20px;
+    }
+}
+
+.kwb-sidebar-link {
+    cursor: pointer !important;
+    margin-bottom: 15px;
+    text-decoration: none;
+    transition: color 0.5s;
+}
+
+.kwb-sidebar-linkgroup {
+    display: flex;
+    flex-direction: column;
+}
+
+.kwb-sidebar-linktext {
+    opacity: 1;
+    transition: opacity 0.5s, visibility 0.5s;
+}
+
+.kwb-sidebar-profileimage {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    cursor: pointer;
+    display: block;
+    height: 120px;
+    margin: 0 auto;
+    transition: 0.5s;
+    width: 120px;
+}
+
+
+/* Knowledgebase Custom Styles: Widgets Icon Browser */
+.kwb-browsericons {
+    position: absolute;
+    top: 1%;
+    left: 7%;
+    z-index: 999;
+}
+
+.kwb-browsericons-search {
+    height: 40px;
+}
+
+.kwb-browsericons-dropdown {
+    position: absolute;
+    z-index: 1000;
+    top: 100%;
+    left: 0;
+    border-radius: 0.375rem;
+    width: 100%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    box-sizing: border-box; /* So that padding doesn't affect width */
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+.kwb-browsericons-iconlist {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(30px, 1fr));
+    grid-gap: 10px;
+}
+
+.kwb-browsericons-iconitem {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &:hover {
+        opacity: 0.3;
+    }
+}
+
+
+/* Knowledgebase Custom Styles: Widgets Topic Browser */
+.kwb-browsertopics-container {
+    border-radius: 5px;
+    overflow-y: auto;
+    resize: vertical;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 5px;
+
+    ::-webkit-scrollbar {
+        width: 10px;
+    }
+    ::-webkit-scrollbar-track {
+        background: #f1f1f1;
+    }
+    ::-webkit-scrollbar-thumb {
+        background: #888;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+        background: #555;
+    }
+}
